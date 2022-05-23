@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --color-primary: #FF0000;
+  --color-secondary: #282828;
+  --color-tertiary: #fff;
+  --color-bold: #000;
+}
+
+.bg-red {
+  background-color: var(--color-primary);
+}
+
+.img-scale {
+  max-width: 280px;
+}
+
+.img-logo {
+  max-width: 100px;
+}
+
+.input-product {
+  max-width: 34px
+}
+
+.btn-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 40px;
+  border: none;
+  border-radius: 4px;
+}
+
+.text-bold a {
+  color: var(--color-bold);
+}
+
+.text-white a {
+  color: var(--color-tertiary);
+}
+
+.nav-link:hover {
+  color: var(--color-bold);
+}
+
+hr {
+  border: 1px solid var(--color-tertiary);
+}
+
+.nav-link:focus {
+  color: var(--color-tertiary);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: var(--color-bold)
+}
+
+.text-bold-opacity {
+  color: #0000000d;
+}
+
+.navbar-white {
+  color: var(--color-tertiary);
+}
+
+.breadcrumb-item.active {
+  color: var(--color-primary);
+}
+
+.a-white a {
+  color: var(--color-tertiary);
+}
+
+.border-none {
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn-outline-dark {
+  background-color: var(--color-primary)
+}

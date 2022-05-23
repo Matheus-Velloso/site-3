@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="icon" href="../images/logo-mengo.jpg">
+    <script src="https://kit.fontawesome.com/87c284409d.js" crossorigin="anonymous"></script>
+    <title>Mengo</title>
+</head>
+
+<body class="d-flex flex-column">
+    <header class="bg-black">
+        <div class="container p-4">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-3 d-md-none">
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <form class="text-center" role="search">
+                        <input class="form-control me-2 mb-2" type="search" placeholder="Search" aria-label="Search">
+                        <a href="./produto.html" class="btn btn-outline-dark" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="./carrinho.html" class="btn btn-outline-dark" type="submit">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </form>
+                    <div class="offcanvas-body text-bold">
+                        <ul class="list-unstyled display-3">
+                            <li>
+                                <a href="#">
+                                    <i class="me-1 fa-solid fa-house-chimney"></i><span>Inicial</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./produtos.html">
+                                    <i class="me-1 fa-solid fa-shirt"></i><span>Produtos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./quem-somos.html">
+                                    <i class="me-1 fa-solid fa-user-tie"></i><span>Quem somos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./contato.html">
+                                    <i class="me-1 fa-solid fa-phone"></i><span>Contato</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="col-4 text-white d-none d-md-block">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </nav>
+                <div class="col-3">
+                    <img class="img-fluid w-100 img-logo" src="../images/logo-mengo.jpg" alt="Logo">
+                </div>
+                <form class="d-none d-md-flex col-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <a href="./produto.html" class="btn btn-outline-dark" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </form>
+                <div class="d-none d-md-flex col-1">
+                    <a href="./carrinho.html" class="btn btn-outline-dark" type="submit">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="align-items-center justify-content-center bg-red p-3 text-white d-none d-md-block">
+            <nav class="container nav nav-pills nav-fill">
+                <a class="nav-link" href="./index.html">
+                    <i class="me-1 fa-solid fa-house-chimney"></i><span>Inicial</span>
+                </a>
+                <a class="nav-link" href="./produtos.html">
+                    <i class="me-1 fa-solid fa-shirt"></i><span>Produtos</span>
+                </a>
+                <a class="nav-link" href="./quem-somos.html">
+                    <i class="me-1 fa-solid fa-user-tie"></i><span>Quem somos</span>
+                </a>
+                <a class="nav-link active" aria-current="page" href="#">
+                    <i class="me-1 fa-solid fa-phone"></i><span>Contato</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="flex-grow-1 bg-black">
+        <section class="text-center">
+            <img class="img-fluid d-md-none" src="../images/banner-mobile-2.webp" alt="Banner Mobile">
+            <img class="img-fluid d-none d-md-block" src="../images/banner-mengo.png" alt="Banner Desktop">
+        </section>
+        <nav class="p-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb a-white">
+                <li class="breadcrumb-item"><a href="./index.html">Inicial</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contato</li>
+            </ol>
+        </nav>
+        <div class="container mb-3">
+            <h1 class="text-white text-center">Contato</h1>
+            <hr>
+            <div class="row g-2 mb-3">
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputGrid" placeholder="seunome" required>
+                        <label for="floatingInputGrid">Nome</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelectGrid">
+                            <option selected>RJ</option>
+                            <option value="1">SP</option>
+                            <option value="2">PR</option>
+                            <option value="3">MG</option>
+                            <option value="4">Outros</option>
+                        </select>
+                        <label for="floatingSelectGrid">Selecione seu Estado</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="seuemail@exemplo.com" required>
+                <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="floatingPassword" placeholder="Telefone" required>
+                <label for="floatingPassword">Telefone</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Deixe sua mensagem rubro-negra" id="floatingTextarea"
+                    required></textarea>
+                <label for="floatingTextarea">Mensagem</label>
+            </div>
+            <button type="button" class="btn bg-red text-white mt-3" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                Enviar
+            </button>
+
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Mengo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Obrigado pelo feedback. Aperte o botão abaixo para continuar navegando em nossa página ou
+                            espera alguns instantes.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            <a href="./index.html" class="btn btn-dark">Continuar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-black text-center text-lg-start bg-light text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Redes sociais:</span>
+            </div>
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fa-solid fa-dragon"></i> Mengo
+                        </h6>
+                        <p>
+                            Loja oficial e licenciada de camisas e produtos do Flamengo. Garanta o seu produto e venha
+                            fazer parte da maior torcida do mundo.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Produtos
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Camisas</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Canecas</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Bonés</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Acessórios</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Menu
+                        </h6>
+                        <p>
+                            <a href="./index.html" class="text-reset">Inicial</a>
+                        </p>
+                        <p>
+                            <a href="./produtos.html" class="text-reset">Produtos</a>
+                        </p>
+                        <p>
+                            <a href="./quem-somos.html" class="text-reset">Quem somos</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Contato</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contato
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Rua Malany ynalaM, Centro - NF/RJ</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            lojamengo@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +55 (22) 2524-7080</p>
+                        <p><i class="fas fa-print me-3"></i> +55 (22) 99930-0980</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center text-white p-4">
+            All rights reserved 2022 copyright ©
+        </div>
+    </footer>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
